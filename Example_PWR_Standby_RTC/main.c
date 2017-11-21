@@ -18,7 +18,7 @@ unsigned char RTC_Init(void)
 		RCC_RTCCLKConfig(RCC_RTCCLKSource_LSE);
 
 		/* Set prescaler */
-		RTC_SetPrescaler(0x7FFF);
+		RTC_SetPrescaler(0x7FFF); // 32.767 Hz
 
 		/* Enable RTC */
 		RCC_RTCCLKCmd(ENABLE);
